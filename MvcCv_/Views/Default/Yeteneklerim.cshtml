@@ -1,0 +1,23 @@
+﻿@using MvcCv_.Models.Entity
+@model List<TblYeteneklerim>
+
+
+<div class="resume-section-content">
+    <h2 class="mb-5">Yeteneklerim</h2>
+    <ul class="fa-ul mb-0">
+
+
+        @foreach (var x in Model)
+        {
+            <li class="text-dark">
+                <span class="fa-li"><i class="fas fa-check"></i></span>
+                @x.Yetenek
+            </li>
+
+        }
+
+
+
+
+    </ul>
+</div>
